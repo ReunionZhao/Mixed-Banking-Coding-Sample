@@ -1,0 +1,204 @@
+\documentclass{beamer}
+
+\usetheme{default}
+\usecolortheme{dolphin} 
+
+\title{Figures to show trends in C\&I lending by amounts}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Overview
+\begin{frame}{Overview}
+\begin{itemize}
+    \item Data are from the call reports, single periods 06/30, all banks, 2001–2024.
+    \item Charts are variables aggregated across all banks in each period.
+    \item To avoid excessively large values, unit adjustments are made in the charts.
+    \begin{itemize}
+        \item Amount-related data: \$1K in reports → \$1B in charts \\
+        (e.g., [RCON5571/5573/5575] amount currently outstanding of C\&I loans to U.S. addressees in domestic offices)
+        
+        \item Number-related data: 1 in reports → 1M in charts \\
+        (e.g., [RCON5570/5572/5574] number of C\&I loans to U.S. addressees in domestic offices)
+    \end{itemize}
+    \item Each chart includes a brief description of \textit{Variable name; Full name or detailed term in the call report; Source schedule}.
+\end{itemize}
+\end{frame}
+
+% Variable link to charts
+\begin{frame}{Varibales}
+  \tableofcontents
+\end{frame}
+
+% Brief description and charts
+\section{RCFD2170}
+\begin{frame}{[RCFD2170] Total Assets (\$1B)}
+\begin{itemize}
+    \item RCFD2170
+    \item Total Assets
+    \item from Schedule RC - Balance Sheet (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCFD2170] Total Assets (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCFD2170_Total_Assets.pdf} 
+\end{center}
+\end{frame}
+
+
+\section{RCON3387}
+\begin{frame}{[RCON3387] Loans in Domestic Offices: Commercial and Industrial Loans (Quarterly Average) (\$1B)}
+\begin{itemize}
+    \item RCON3387
+    \item Commercial and industrial loans in domestic offices
+    \item from Schedule RC-K - Quarterly Averages (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON3387] Loans in Domestic Offices: Commercial and Industrial Loans (Quarterly Average) (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON3387_Domestic_Office_CI_Loans.pdf} 
+\end{center}
+\end{frame}
+
+
+\section{RCFD3368}
+\begin{frame}{[RCFD3368] Total Assets (Quarterly Average) (\$1B)}
+\begin{itemize}
+    \item RCFD3368
+    \item Total assets
+    \item from Schedule RC-K - Quarterly Averages (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCFD3368] Total Assets (Quarterly Average) (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCFD3368_Total_Assets_Quarterly_Avg.pdf}
+\end{center}
+\end{frame}
+
+
+\section{RCON1763}
+\begin{frame}{[RCON1763] Commercial and Industrial Loans to U.S. Addressees, Domestic Offices (\$1B)}
+\begin{itemize}
+    \item RCON1763
+    \item Commercial and industrial loans to U.S. addressees (domicile) in domestic offices
+    \item from Schedule RC-C Part I - Loans and Leases (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON1763] Commercial and Industrial Loans to U.S. Addressees, Domestic Offices (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON1763_CI_Loans_US_Addressees.pdf}
+\end{center}
+\end{frame}
+
+
+\section{RCON5570}
+\begin{frame}{[RCON5570] Number of Loans to U.S. Addressees with Original Amounts $\leq$ \$100K (1M)}
+\begin{itemize}
+    \item RCON5570
+    \item Number of "Commercial and industrial loans to U.S. addressees" in domestic offices,  with original amounts $\leq$ \$100K
+    \item from Schedule RC-C Part II - Loans to Small Businesses and Small Farms (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON5570] Number of Loans to U.S. Addressees with Original Amounts $\leq$ \$100K (1M)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON5570_Num_Loans_LE_100K.pdf}
+\end{center}
+\end{frame}
+
+
+\section{RCON5571}
+
+\begin{frame}{[RCON5571] Outstanding Amount of Loans to U.S. Addressees with Original Amounts $\leq$ \$100K (\$1B)}
+\begin{itemize}
+    \item RCON5571
+    \item Outstanding amount of "Commercial and industrial loans to U.S. addressees" in domestic offices, \textbf{with original amounts $\leq$ \$100K}
+    \item from Schedule RC-C Part II - Loans to Small Businesses and Small Farms (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON5571] Outstanding Amount of Loans to U.S. Addressees with Original Amounts $\leq$ \$100K (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON5571_Outstanding_LE_100K.pdf}
+\end{center}
+\end{frame}
+
+
+
+\section{RCON5572}
+
+\begin{frame}{[RCON5572] Number of Loans to U.S. Addressees with Original Amounts \$100K–\$250K (1M)}
+\begin{itemize}
+    \item RCON5570
+    \item Number of "Commercial and industrial loans to U.S. addressees" in domestic offices, \textbf{with original amounts \$100K–\$250K}
+    \item from Schedule RC-C Part II - Loans to Small Businesses and Small Farms (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON5572] Number of Loans to U.S. Addressees with Original Amounts \$100K–\$250K (1M)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON5572_Num_Loans_100K_250K.pdf}
+\end{center}
+\end{frame}
+
+
+\section{RCON5573}
+
+\begin{frame}{[RCON5573] Outstanding Amount of Loans to U.S. Addressees with Original Amounts \$100K–\$250K (\$1B)}
+\begin{itemize}
+    \item RCON5573
+    \item Outstanding amount of "Commercial and industrial loans to U.S. addressees" in domestic offices, \textbf{with original amounts \$100K–\$250K}
+    \item from Schedule RC-C Part II - Loans to Small Businesses and Small Farms (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON5573] Outstanding Amount of Loans to U.S. Addressees with Original Amounts \$100K–\$250K (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON5573_Outstanding_100K_250K.pdf}
+\end{center}
+\end{frame}
+
+
+\section{RCON5574}
+\begin{frame}{[RCON5574] Number of Loans to U.S. Addressees with Original Amounts \$250K–\$1M (1M)}
+\begin{itemize}
+    \item RCON5574
+    \item Number of "Commercial and industrial loans to U.S. addressees" in domestic offices, \textbf{with original amounts \$250K–\$1M}
+    \item from Schedule RC-C Part II - Loans to Small Businesses and Small Farms (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON5574] Number of Loans to U.S. Addressees with Original Amounts \$250K–\$1M (1M)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON5574_Num_Loans_250K_1M.pdf}
+\end{center}
+\end{frame}
+
+
+\section{RCON5575}
+\begin{frame}{[RCON5575] Outstanding Amount of Loans to U.S. Addressees with Original Amounts \$250K–\$1M (\$1B)}
+\begin{itemize}
+    \item RCON5575
+    \item Outstanding amount of "Commercial and industrial loans to U.S. addressees" in domestic offices, \textbf{with original amounts \$250K–\$1M}
+    \item from Schedule RC-C Part II - Loans to Small Businesses and Small Farms (Form Type - 031)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{[RCON5575] Outstanding Amount of Loans to U.S. Addressees with Original Amounts \$250K–\$1M (\$1B)}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/Figure_RCON5575_Outstanding_250K_1M.pdf}
+\end{center}
+\end{frame}
+
+
+
+
+
+\end{document}
